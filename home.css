@@ -1,0 +1,26 @@
+body
+{
+    background-color:lightcyan;
+}
+.home1 iframe
+{
+
+   border-radius:30px;
+   border-color:crimson;
+}
+.home1 iframe:hover{
+    border:2px solid blueviolet;
+}
+.home2 iframe
+{
+
+   border-radius:30px;
+   border-color:crimson;
+}
+.home2 iframe:hover{
+    border:2px solid blueviolet;
+}
+.video{
+    border-color: chartreuse;
+    border-radius: 20px;
+}
