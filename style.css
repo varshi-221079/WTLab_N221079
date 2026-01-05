@@ -1,0 +1,12 @@
+body 
+{
+    background-color:plum;
+}
+.form
+{
+    background-color: aquamarine;
+    width:50%;
+    height:100%;
+    align:center;
+    padding:30px;
+}

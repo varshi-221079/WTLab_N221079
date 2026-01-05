@@ -1,6 +1,17 @@
 body
 {
     background-color:lightcyan;
+    background-image: url("/home/user/Pictures/Screenshots/Screenshot from 2025-12-26 17-20-25.png"),norepeat,center center;
+}
+.image
+{
+    align:right;
+    opacity:0.5;
+}
+.image:hover
+{
+    opacity:1.0;
+    outline:1px solid red;
 }
 .home1 iframe
 {
