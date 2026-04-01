@@ -1,0 +1,66 @@
+<html>
+<head>
+</head>
+<style>
+    h1
+    {
+        background-color: blue;
+    }
+    #mainfooter
+    {
+        margin-left: 400px;
+        bottom:10;
+        left:0;
+        position:fixed;
+    }
+#mainbody
+{
+    float:right;
+    height:100%;
+    width:75%;
+    border:1px solid red;
+    background-color:azure;
+}
+    #mainsidebar
+    {
+        float:left;
+        height:100%;
+        width:20%;
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+ <h1 align="center">ONLINE GROUP DISCUSSION</h1>
+ <header>
+ <label for="topic name">Topic name:</label>
+ <input type="text" id="topicogd3"size="30" name="topic name" placeholder="topic name">
+ <br>
+ <br>
+ </header>
+ <aside id="mainsidebar">
+ <h3>PARTICIPANTS LIST:</h3>
+ 
+ </aside>
+ <main id="mainbody">
+
+ </main>
+ <footer id="mainfooter">
+<div id="btn">
+ <button style="background-color:darkorange;height:30px;width:100px;">Raise Hand</button>
+ &nbsp &nbsp &nbsp &nbsp;
+ <button style="background-color:pink; height:30px;width:80px;">mute</button>
+ &nbsp &nbsp &nbsp &nbsp;
+ <button style="background-color:aqua; height:30px;width:80px">message</button>
+ &nbsp &nbsp &nbsp &nbsp;
+ <button style="background-color:red;height:30px;width:150px">leave discussion</button>
+ </div>
+ </footer>
+ <script>
+ window.onload=function()
+ {
+    let topic=localStorage.getItem("gdTopic")
+    document.getElementById("topicogd3").value=topic
+ }
+ </script>
+</body>
+</html>

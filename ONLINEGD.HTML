@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>GROUP DISCUSSION</title>
+<link rel="icon" type="image" href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="css/onlinegd.css">
+<meta name="viewport" content="width=devoce-width,initial-scale=1">
+<meta name="description" content="group discussion">
+<style>
+  body
+  {
+      background-color:bisque;
+  }
+  h1
+  {
+      color:blueviolet;
+      font-weight:30;
+      text-align:center;
+      
+  }
+  .top-buttons{
+    display:flex;
+    gap:10px;
+    }
+    
+    .login-btn,
+    .register-btn{
+    padding:8px 16px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:500;
+    }
+    .google-btn,
+    .start-btn
+    {
+      padding:8px 10px;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+      font-size:14px;
+      font-weight:500;
+    }
+
+    .login-btn{
+    background:skyblue;
+    color:#1e2a38;
+    }
+    
+    .login-btn:hover{
+    background:blue;
+    }
+    
+    .register-btn{
+    background:green;
+    color:white;
+    }
+    
+    .register-btn:hover{
+    background:#e67e22;
+    }
+    .google-btn{
+      background:#f39c12;
+      color:white;
+      padding:8px 10px;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+      font-size:14px;
+      font-weight:500;
+      }
+      
+      .google-btn:hover{
+      background:#e67e22;
+      }
+      .start-container {
+        display: flex;
+        justify-content: center;   /* horizontal center */
+        align-items: center;       /* vertical center (optional) */
+        margin-top: 20px;
+      }
+      
+      .start-btn {
+        background-color: orangered;
+        width: 100px;
+        height: 40px;
+      }
+  </style>
+</head>
+<body>
+  <h1>Welcome To Group Discussion</h1>
+
+  <nav class="navigation" id="main-nav">
+    <ul>
+      <li><a href="home.html" class="nav-link active">Home</a></li>
+      <li><a href="discussion.html" class="nav-link">Discussion</a></li>
+      <li><a href="profile.html" class="nav-link">Profile</a></li>
+      <li><a href="more.html" class="nav-link">More</a></li>
+    </ul>
+  </nav>
+<div class="image">
+<img src="images/background.png">
+<div class="top-buttons"style="position: fixed; top: 10px; right: 10px; gap:10px;" >
+  <a href="login.html"><button class="login-btn" >Login</button></a>
+  <!--<a href="http://localhost:5000/auth/google"><button class="google-btn" style="position:absolute;top:0;right:80px;margin:10px;">Login With Google</button></a>-->
+  <button type="button"class='google-btn' id="googleBtn">Login with Google</button>
+  <a href="register.html"><button class="register-btn" >Register</button></a>
+  </div>
+<tr>
+  <div class="start-container">
+  <a href="ogd2.html"> <button class="start-btn" style="position:relative;bottom:0;margin:10px; background-color:orangered; width:80px; height:30px;" id="my-button" onmousemove="startgd()" onclick="nextwebpage()" align="center">START</button></a>
+  </div>
+</tr>
+<br>
+<footer id="main-footer">
+<div>
+<tr>
+<th>
+  <a href="help.html"><button style="background-color:aqua; height:20px;width:100px;">Help</button></a>
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+  <a href="contact.html"><button style="background-color:aqua; height:20px;width:100px;">Contact  Us</button></a>
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+  <a href="https://google.com">Google</a>
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+  <a href="https://Linkdin.com">Linkdin</a>
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+</footer>
+<script src="home.js"></script>
+<script>
+  document.getElementById("googleBtn").addEventListener("click", function() {
+    window.location.href = "http://localhost:5000/api/auth/google";
+});
+</script>
+</body>
+</html>

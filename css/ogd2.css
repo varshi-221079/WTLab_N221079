@@ -1,0 +1,16 @@
+body
+{
+  background-color:lightgray;
+}
+.class1:hover
+{
+    border: 3px solid blue;
+}
+.class2:hover
+{
+    border: 3px solid blue;
+}
+.class3:hover
+{
+    border: 3px solid blue;
+}
