@@ -1,0 +1,69 @@
+<html>
+    <head>
+<script>
+    var a = 1;
+    var b = 2;
+    var c = a + b;
+    console.log(c);
+    document.write("The result of a + b is: " + c);
+   /* function sayhello() {
+        alert("Hello, World!");
+    }*/
+    const sayhello=() => {
+        var name = prompt("What is your name?");
+        alert("hello world,"+name);
+    }
+function changetext() {
+    document.getElementById("para").innerHTML = "The text has been changed!";
+}
+function addtext(){
+    document.getElementById("para").innerHTML +="ADDED NEW TEXT";
+}
+function removetext(){
+    document.getElementById("para").innerHTML="";
+}
+function format(){
+    document.getElementById("para").style.color="red";
+    document.getElementById("para").style.fontSize="20px";
+}
+let tog=false;
+function toggle(){
+    if(!tog)
+    {
+        document.getElementById("para").style.color="blue";
+    }
+    else{
+        document.getElementById("para").style.color="pink";
+    }
+    tog=!tog;
+}
+function fun(event){
+    event.preventDefault();
+    console.log("form submitted");
+}
+
+</script>
+</head>
+<body>
+    <h1>JavaScript Example</h1>
+    <p id="para" style="color:blueviolet;font-size:16px;">Open the console to see the result of the JavaScript code.</p>
+    <input type="button" onclick="changetext()" value="Click here to change text">
+    <!-- dynamically add or remove content -->
+    <input type="button" onclick="addtext()" value="add text">
+    <input type="button" onclick="removetext()" value="removetext">
+    <input type="button" value="Click me" onclick="sayhello()">
+    <input type="button" onclick="format()" value="Click here to format text">
+    <input type="button" onclick="toggle()" value="Click here to toggle text">
+     <input type="button" onmouseover="sayhello()" value="Click here to toggle text">
+     <input type="button" onmouseout="addtext()" value="Click here to toggle text">
+   <form onsubmit="fun(event)">
+    <input type="text" name="name" placeholder="Enter your name">
+    <input type="email" name="email" placeholder="Enter your email">
+    <input type="password" name="password" placeholder="Enter your password">
+     <label for="gender"></label>
+    <input type="radio" value="male">
+    <input type="radio" value="female">
+    <input type="submit"  value="submit">
+   </form>
+</body>
+</html>
